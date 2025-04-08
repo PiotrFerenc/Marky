@@ -12,12 +12,11 @@
    ***bold italic*** or ___bold italic___
 
 3. Unordered Lists
-- Item
+-  [Link description](https://example.com)
+* Item 
 * Item
-+ Item
 
 5. Ordered Lists
-   
 1. First
 2. Second
 3. Third
