@@ -4,6 +4,7 @@ namespace Marky;
 
 public class MarkdownElement(string markdown)
 {
+    public static MarkdownElement Create(string markdown) => new(markdown);
     public override string ToString() => markdown;
 };
 

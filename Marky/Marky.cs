@@ -11,7 +11,8 @@ public static partial class Marky
 {
     public static class List
     {
-        public static MarkdownElement Unordered(params MarkdownElement[] elements) => new(string.Join("\n", elements.Select(e => $"- {e}")));
+        public static MarkdownElement Unordered(params MarkdownElement[] elements) => MarkdownElement.Create(string.Join("\n", elements.Select(e => $"- {e}")));
+        public static MarkdownElement Ordered(params MarkdownElement[] elements) => MarkdownElement.Create(string.Join("\n", elements.Select((e, i) => $"{i + 1}. {e}")));
     }
 }
 
