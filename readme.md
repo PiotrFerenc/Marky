@@ -1,29 +1,3 @@
-1. Headings
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
-
-3. Bold and Italic
-   *italic* or _italic_
-   **bold** or __bold__
-   ***bold italic*** or ___bold italic___
-
-3. Unordered Lists
--  [Link description](https://example.com)
-* Item 
-* Item
-
-5. Ordered Lists
-1. First
-2. Second
-3. Third
-
-6. Links   
-   [Link description](https://example.com)
-
 6. Images
    ![Alt text](https://image-url.jpg)
 7. Blockquotes

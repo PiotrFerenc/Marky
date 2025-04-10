@@ -2,6 +2,14 @@
 
 public static partial class Marky
 {
+    public static class Links
+    {
+        public static MarkdownElement Link(Text text, string url) => new($"[{(text.IsEmpty ? url : text)}]({(string.IsNullOrWhiteSpace(url) ? string.Empty : url)})");
+    }
+}
+
+public static partial class Marky
+{
     public static MarkdownElement Italic(Text text) => new($"*{text}*");
     public static MarkdownElement Bold(Text text) => new($"**{text}**");
     public static MarkdownElement BoldItalic(Text text) => new($"***{text}***");

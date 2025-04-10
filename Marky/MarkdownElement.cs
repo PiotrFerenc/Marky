@@ -9,4 +9,5 @@ public class MarkdownElement(string markdown)
 public class Text(string text) : MarkdownElement(text)
 {
     public static Text Create(string text) => new(text);
+    public bool IsEmpty => string.IsNullOrWhiteSpace(text);
 }
