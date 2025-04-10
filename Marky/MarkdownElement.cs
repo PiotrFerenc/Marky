@@ -1,5 +1,3 @@
-using System.Dynamic;
-
 namespace Marky;
 
 public class MarkdownElement(string markdown)

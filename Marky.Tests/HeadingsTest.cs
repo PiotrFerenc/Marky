@@ -1,6 +1,4 @@
 using JetBrains.Annotations;
-using Marky;
-using Xunit;
 
 namespace Marky.Tests;
 
