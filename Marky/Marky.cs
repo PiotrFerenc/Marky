@@ -1,6 +1,21 @@
 ﻿namespace Marky;
 
-public static class Marky
+public static partial class Marky
+{
+    public static MarkdownElement Italic(Text text) => new($"*{text}*");
+    public static MarkdownElement Bold(Text text) => new($"**{text}**");
+    public static MarkdownElement BoldItalic(Text text) => new($"***{text}***");
+}
+
+public static partial class Marky
+{
+    public static class List
+    {
+        public static MarkdownElement Unordered(params MarkdownElement[] elements) => new(string.Join("\n", elements.Select(e => $"- {e}")));
+    }
+}
+
+public static partial class Marky
 {
     public static class Headings
     {
@@ -11,16 +26,4 @@ public static class Marky
         public static MarkdownElement Heading5(Text text) => new($"##### {text}");
         public static MarkdownElement Heading6(Text text) => new($"###### {text}");
     }
-
-    public static class List
-    {
-        public static MarkdownElement Unordered(params MarkdownElement[] elements) =>
-            new(string.Join("\n", elements.Select(e => $"- {e}")));
-        
-        
-    }
-
-    public static MarkdownElement Italic(Text text) => new($"*{text}*");
-    public static MarkdownElement Bold(Text text) => new($"**{text}**");
-    public static MarkdownElement BoldItalic(Text text) => new($"***{text}***");
 }
