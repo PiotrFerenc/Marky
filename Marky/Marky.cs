@@ -47,3 +47,13 @@ public static partial class Marky
         public static MarkdownElement InlineCode(Text text) => new($"`{text}`");
     }
 }
+
+public static partial class Marky
+{
+    public static class HorizontalRule
+    {
+        public static MarkdownElement Star() => new("***");
+        public static MarkdownElement Dash() => new("---");
+        public static MarkdownElement Underscore() => new("___");
+    }
+}

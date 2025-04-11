@@ -1,17 +1,4 @@
- 
 
-8. Code
-   Inline:
-   This is `inline code`.
-   Block:
-<pre> ``` Code block here ``` </pre>
-9. Horizontal Rule
-  
----
-or
-***
-or
-___
 10. Tables
     
     | Column 1 | Column 2 |
