@@ -1,7 +1,5 @@
-6. Images
-   ![Alt text](https://image-url.jpg)
-7. Blockquotes
-> This is a quote.
+ 
+
 8. Code
    Inline:
    This is `inline code`.

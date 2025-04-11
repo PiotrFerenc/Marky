@@ -14,6 +14,7 @@ public static partial class Marky
     public static MarkdownElement Bold(Text text) => new($"**{text}**");
     public static MarkdownElement BoldItalic(Text text) => new($"***{text}***");
     public static MarkdownElement Image(Text text, string url) => new($"![{text}]({url})");
+    public static MarkdownElement Blockquotes(Text text) => new($"> {text}");
 }
 
 public static partial class Marky
@@ -35,5 +36,14 @@ public static partial class Marky
         public static MarkdownElement Heading4(Text text) => new($"#### {text}");
         public static MarkdownElement Heading5(Text text) => new($"##### {text}");
         public static MarkdownElement Heading6(Text text) => new($"###### {text}");
+    }
+}
+
+public static partial class Marky
+{
+    public static class Code
+    {
+        public static MarkdownElement CodeBlock(Text text) => new($"```\n{text}\n```");
+        public static MarkdownElement InlineCode(Text text) => new($"`{text}`");
     }
 }
