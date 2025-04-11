@@ -70,3 +70,12 @@ public static partial class Marky
         public static MarkdownElement TableCell(Text text) => new($"| {text} |");
     }
 }
+
+public static partial class Marky
+{
+    public static class Checkboxes
+    {
+        public static MarkdownElement Checkbox(Text text) => new($"- [ ] {text}");
+        public static MarkdownElement CheckboxChecked(Text text) => new($"- [x] {text}");
+    }
+}
