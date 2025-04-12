@@ -33,7 +33,7 @@ public class TablesTest
         var result = Marky.Tables.TableRow(element1, element2);
 
         // Assert
-        Assert.Equal("| Row1 | Row2 ", result.ToString());
+        Assert.Equal("| Row1 | Row2 |", result.ToString());
     }
 
     [Fact]

@@ -69,11 +69,13 @@ public static partial class Marky
         public static MarkdownElement Table(params MarkdownElement[] elements) =>
             MarkdownElement.Create(string.Join("\n", elements.Select(e => $"| {e} ")));
 
-        public static MarkdownElement TableRow(params MarkdownElement[] elements) =>
-            MarkdownElement.Create(string.Join("|", elements.Select(e => $"| {e} ")));
+        public static MarkdownElement TableRow(params MarkdownElement[] elements) => elements.Length != 0
+            ? MarkdownElement.Create($"|{string.Join(string.Empty, elements.Select(e => $" {e} |"))}")
+            : new Text("");
 
-        public static MarkdownElement TableHeader(params MarkdownElement[] elements) =>
-            MarkdownElement.Create($"| {string.Join(string.Empty, elements.Select(e => $"{e} |"))}");
+        public static MarkdownElement TableHeader(params MarkdownElement[] elements) => elements.Length != 0
+            ? MarkdownElement.Create($"|{string.Join(string.Empty, elements.Select(e => $" {e} |"))}")
+            : new Text("");
 
         public static MarkdownElement TableHeaderDivider() => MarkdownElement.Create("| --- |");
         public static MarkdownElement TableDivider() => MarkdownElement.Create("| --- |");
