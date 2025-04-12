@@ -47,7 +47,7 @@ public class TablesTest
         var result = Marky.Tables.TableHeader(column1, column2);
 
         // Assert
-        Assert.Equal("| Header1 | Header2 ", result.ToString());
+        Assert.Equal("| Header1 | Header2 |", result.ToString());
     }
 
     [Fact]

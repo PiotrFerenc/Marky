@@ -70,10 +70,10 @@ public static partial class Marky
             MarkdownElement.Create(string.Join("\n", elements.Select(e => $"| {e} ")));
 
         public static MarkdownElement TableRow(params MarkdownElement[] elements) =>
-            MarkdownElement.Create( string.Join("|", elements.Select(e => $"| {e} ")));
+            MarkdownElement.Create(string.Join("|", elements.Select(e => $"| {e} ")));
 
         public static MarkdownElement TableHeader(params MarkdownElement[] elements) =>
-            MarkdownElement.Create(string.Join("|", elements.Select(e => $"| {e}")));
+            MarkdownElement.Create($"| {string.Join(string.Empty, elements.Select(e => $"{e} |"))}");
 
         public static MarkdownElement TableHeaderDivider() => MarkdownElement.Create("| --- |");
         public static MarkdownElement TableDivider() => MarkdownElement.Create("| --- |");
