@@ -1,5 +1,14 @@
 ﻿namespace Marky;
 
+public static class MarkyConstants
+{
+    public const char Star = '*';
+    public const char Dash = '-';
+    public const char Underscore = '_';
+    public const char NewLine = '\n';
+    public const string Space = " ";
+}
+
 public static partial class Marky
 {
     public static class Links
@@ -11,9 +20,9 @@ public static partial class Marky
 
 public static partial class Marky
 {
-    public static MarkdownElement Italic(Text text) => new($"*{text}*");
-    public static MarkdownElement Bold(Text text) => new($"**{text}**");
-    public static MarkdownElement BoldItalic(Text text) => new($"***{text}***");
+    public static MarkdownElement Italic(Text text) => new($"{MarkyConstants.Star}{text}{MarkyConstants.Star}");
+    public static MarkdownElement Bold(Text text) => new($"{new string(MarkyConstants.Star, 2)}{text}{new string(MarkyConstants.Star, 2)}");
+    public static MarkdownElement BoldItalic(Text text) => new($"{new string(MarkyConstants.Star, 3)}{text}{new string(MarkyConstants.Star, 3)}");
     public static MarkdownElement Image(Text text, string url) => new($"![{text}]({url})");
     public static MarkdownElement Blockquotes(Text text) => new($"> {text}");
 }

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marky", "Marky\Marky.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marky.Tests", "Marky.Tests\Marky.Tests.csproj", "{4F80DC54-AE9F-4F3A-B1E0-A7134F287B5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marky.Benchmark", "Marky.Benchmark\Marky.Benchmark.csproj", "{82C8EF11-612F-4487-B339-D6404B25C9CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4F80DC54-AE9F-4F3A-B1E0-A7134F287B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F80DC54-AE9F-4F3A-B1E0-A7134F287B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F80DC54-AE9F-4F3A-B1E0-A7134F287B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C8EF11-612F-4487-B339-D6404B25C9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C8EF11-612F-4487-B339-D6404B25C9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C8EF11-612F-4487-B339-D6404B25C9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C8EF11-612F-4487-B339-D6404B25C9CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
